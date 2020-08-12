@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './SearchButton.component.css'
 
 export default function SearchButton() {
     return (
         <div>
-            <button></button>
+            <button className='button'>Search</button>
         </div>
     )
 }

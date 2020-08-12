@@ -36,3 +36,17 @@ body {
 .navbar-title2 {
   text-align: right;
 }
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
