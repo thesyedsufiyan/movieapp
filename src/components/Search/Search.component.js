@@ -20,21 +20,19 @@ const Search = (props) => {
     }
 
     return (
-        <div>
-            <form className="search">
-                <input
-                    className='input-style'
-                    value={searchValue}
-                    placeholder='search movie'
-                    onChange={handleInput}
-                    type='text' />
-                <Dropdown />
+        <form className="search">
+            <input
+                className='input-style'
+                value={searchValue}
+                placeholder='search movie'
+                onChange={handleInput}
+                type='text' />
+            <Dropdown />
 
-                <input
-                    className='input-button'
-                    onClick={callSearchFunction} type="submit" value='SEARCH' />
-            </form>
-        </div>
+            <input
+                className='input-button'
+                onClick={callSearchFunction} type="submit" value='SEARCH' />
+        </form>
     );
 };
 

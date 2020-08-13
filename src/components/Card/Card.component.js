@@ -11,14 +11,15 @@ const Card = ({ movie }) => {
     return (
         <div className='card'>
             <div>
+                <h5>{movie.Title}</h5>
                 <img width='200'
                     className='card-style'
                     alt={`this movie titled: ${movie.Title}`}
                     src={poster}
                 />
             </div>
-            <p>{movie.Title}</p>
             <p>{movie.Year}</p>
+            <button className='button'>favotite</button>
         </div>
     );
 };

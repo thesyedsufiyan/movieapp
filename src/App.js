@@ -8,7 +8,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [errorMessage, seterrorMessage] = useState(null);
 
-  const MOVIE_URL = "http://www.omdbapi.com/?s=fast&apikey=3ec28278";
+  const MOVIE_URL = "http://www.omdbapi.com/?s=terminator&apikey=3ec28278";
 
   useEffect(() => {
     fetch(MOVIE_URL)
@@ -44,6 +44,7 @@ function App() {
         <div className='navbar-title'> Home</div>
       </div>
       <Search search={search} />
+      <h4>Sharing a few of our favourite movies</h4>
 
       <div className='movies'>
         {loading && !errorMessage ? (
